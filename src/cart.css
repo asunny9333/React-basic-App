@@ -1,0 +1,18 @@
+.cart-items {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .cart-item {
+    margin-right: 30px; 
+  }
+  
+  .cart-item img {
+    max-width: 400px; 
+    height: auto; 
+  }
+  .buynow{
+    width: 250px;
+    
+  }
+  
