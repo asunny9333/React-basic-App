@@ -20,6 +20,8 @@ function App() {
     setCart(updatedCart);
   };
 
+
+  
   const removeFromCart = (itemToRemove) => {
     const updatedCart = cart.filter((item) => item.id !== itemToRemove.id);
     setCart(updatedCart);
