@@ -1,4 +1,4 @@
-**My E-Commerce Site (ShopEase)**
+#My E-Commerce Site (ShopEase)
 This project is a full-stack e-commerce website built using React for the frontend and Node.js with Express for the backend. The database is managed with MongoDB.
 
 **Table of Contents**
