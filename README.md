@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+**My E-Commerce Site (ShopEase)**
+This project is a full-stack e-commerce website built using React for the frontend and Node.js with Express for the backend. The database is managed with MongoDB.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Table of Contents**
+*Features
+*Prerequisites
+*Running the Application
+*Folder Structure
+*API Endpoints
 
-## Available Scripts
+**Features**
+User Authentication (Sign Up, Sign In)
+Product Listing
+Shopping Cart
+Checkout and Order Placement
+Receipt Page after Checkout
 
-In the project directory, you can run:
+**Prerequisites**
+Before you begin, ensure you have met the following requirements:
 
-### `npm start`
+Node.js (version 14 or higher) installed on your machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Install Dependencies
+Backend
+Navigate to the backend directory and install the necessary packages:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+cd backend
+npm install
 
-### `npm test`
+Frontend
+Navigate to the frontend directory and install the necessary packages:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cd ../frontend
+npm install
 
-### `npm run build`
+2. Setup Environment Variables
+Update .env file in the backend directory and add the following:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MONGO_URI=<Your MongoDB URI>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+******Running the Application*****
+1. Start the Backend Server
+In the backend directory, run:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm start
+This starts the backend server on http://localhost:5000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Start the Frontend Server
+In the frontend directory, run:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start
+This starts the frontend on http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Open Your Browser
+Navigate to http://localhost:3000 to use the application.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Folder Structure**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Final PRoject/
+│
+├── backend/               # Backend code
+│   ├── controllers/       # will be used in the future
+│   ├── models/            # Mongoose models / database schema
+│   ├── routes/            # Express routes
+│   ├── server.js          # Entry point for the backend
+│   └── package.json       # Backend dependencies and scripts
+│
+├── frontend/              # Frontend code
+│   ├── public/            # Static assets
+│   ├── src/               # React components and pages
+│   ├── App.js             # Main App component
+│   └── package.json       # Frontend dependencies and scripts
+│
+└── README.md              # Project documentation
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**API Endpoints**
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**POST** /api/auth/signup: User registration
+**POST** /api/auth/signin: User login
+**GET**  /api/products: Get list of products
+**POST** /api/orders: Place an order (currently there is no option to add the products from UI, new products can be added directly through database using this API)

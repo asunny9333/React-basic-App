@@ -1,0 +1,40 @@
+/* menubar.css */
+.menu-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.menu-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-bar a:hover {
+  background-color: #667eea;
+  transform: scale(1.05);
+}
+
+.menu-bar a:active {
+  background-color: #764ba2;
+}
+
+.menu-bar a:last-child {
+  background-color: #ff4757;
+}
+
+.menu-bar a:last-child:hover {
+  background-color: #e84343;
+}
+
+.menu-bar a:last-child:active {
+  background-color: #c0392b;
+}
