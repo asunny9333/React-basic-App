@@ -1,21 +1,21 @@
-#My E-Commerce Site (ShopEase)
+# My E-Commerce Site (ShopEase)
 This project is a full-stack e-commerce website built using React for the frontend and Node.js with Express for the backend. The database is managed with MongoDB.
 
-**Table of Contents**
+### Table of Contents
 *Features
 *Prerequisites
 *Running the Application
 *Folder Structure
 *API Endpoints
 
-**Features**
+#### Features
 User Authentication (Sign Up, Sign In)
 Product Listing
 Shopping Cart
 Checkout and Order Placement
 Receipt Page after Checkout
 
-**Prerequisites**
+#### Prerequisites
 Before you begin, ensure you have met the following requirements:
 
 Node.js (version 14 or higher) installed on your machine.
@@ -40,7 +40,7 @@ Update .env file in the backend directory and add the following:
 MONGO_URI=<Your MongoDB URI>
 
 
-******Running the Application*****
+#### Running the Application
 1. Start the Backend Server
 In the backend directory, run:
 
@@ -57,7 +57,7 @@ This starts the frontend on http://localhost:3000.
 Navigate to http://localhost:3000 to use the application.
 
 
-**Folder Structure**
+#### Folder Structure
 
 Final PRoject/
 │
@@ -77,7 +77,7 @@ Final PRoject/
 └── README.md              # Project documentation
 
 
-**API Endpoints**
+#### API Endpoints
 
 **POST** /api/auth/signup: User registration
 **POST** /api/auth/signin: User login
